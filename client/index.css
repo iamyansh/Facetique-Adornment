@@ -1,0 +1,12 @@
+.css-1gb73wi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.css-m8owto{
+    margin-top: 0 !important;
+}
+.css-1pgexxt img{
+    margin-top: -25% !important;
+}
