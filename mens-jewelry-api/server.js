@@ -25,32 +25,7 @@ const homeTopData = [
             "https://www.swashaa.com/cdn/shop/files/ThomasMen_sEarrings-Chaitanya-M-Styling-Outdoor-08-11-2023.jpg?v=1713605406&amp;width=1080",
             "https://www.swashaa.com/cdn/shop/files/HenrikMen_sChainPendant-19.jpg?v=1716461901&amp;width=1080"
         ]
-    },
-    // {
-    //     _id: 2,
-    //     heading: '2 Gold Stud Earrings',
-    //     description: "The Nike men's cloths collection have lot of varieties where you can find your perfect cloths for running, exercise, yoga, sportswear etc",
-    //     gender: 'men',
-    //     img: [
-    //         // "C:\Users\20050\Downloads\Nike-Clone-master\Nike-Clone-master\img1.png",
-    //         "https://www.swashaa.com/cdn/shop/collections/Men_s_Bracelet_Banner_1.jpg?v=1698494396&amp;width=1600",
-    //         "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/20556d0e-47a1-4a49-9c2b-739881ed586f/jordan-air-jordan-t-shirt-7xvk6R.png",
-    //         "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/baf08ec2-755f-4023-be87-85846e5e6f16/sportswear-french-terry-pullover-hoodie-kRDQGK.png"
-    //     ]
-    // },
-    // {
-    //     _id: 3,
-    //     heading: '3 Gold Stud Earrings',
-    //     description: "The Nike men's cloths collection have lot of varieties where you can find your perfect cloths for running, exercise, yoga, sportswear etc",
-    //     gender: 'men',
-    //     img: [
-    //         // "C:\Users\20050\Downloads\Nike-Clone-master\Nike-Clone-master\img1.png",
-    //         "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4c5b556f-8ec6-4c04-9115-6faf42a032c0/jordan-air-jordan-t-shirt-7xvk6R.png",
-    //         "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/20556d0e-47a1-4a49-9c2b-739881ed586f/jordan-air-jordan-t-shirt-7xvk6R.png",
-    //         "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/baf08ec2-755f-4023-be87-85846e5e6f16/sportswear-french-terry-pullover-hoodie-kRDQGK.png"
-    //     ]
-    // }
-    // Add more items as needed
+    }
 ];
 
 
@@ -109,52 +84,6 @@ const homeBottomData = [
 app.get('/homeBottomData', (req, res) => {
     res.json(homeBottomData);
 });
-
-
-
-
-
-// const shoeData = [
-//     {
-//         _id: 7,
-//         heading: '7 Gold Stud Earrings',
-//         description: "The Nike men's cloths collection have lot of varieties where you can find your perfect cloths for running, exercise, yoga, sportswear etc",
-//         gender: 'men',
-//         img: [
-//             "https://www.swashaa.com/cdn/shop/collections/Untitled_design.png?v=1688721661&amp;width=1600",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4c5b556f-8ec6-4c04-9115-6faf42a032c0/jordan-air-jordan-t-shirt-7xvk6R.png",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/20556d0e-47a1-4a49-9c2b-739881ed586f/jordan-air-jordan-t-shirt-7xvk6R.png",
-//         ]
-//     },
-//     {
-//         _id: 8,
-//         heading: '8 Gold Stud Earrings',
-//         description: "The Nike men's cloths collection have lot of varieties where you can find your perfect cloths for running, exercise, yoga, sportswear etc",
-//         gender: 'men',
-//         img: [
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f2d1862d-ebb5-49c4-b803-f2d7ad446604/jordan-jumpman-85-t-shirt-5f2vG1.png",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4c5b556f-8ec6-4c04-9115-6faf42a032c0/jordan-air-jordan-t-shirt-7xvk6R.png",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/20556d0e-47a1-4a49-9c2b-739881ed586f/jordan-air-jordan-t-shirt-7xvk6R.png",
-//         ]
-//     },
-//     {
-//         _id: 9,
-//         heading: '9 Gold Stud Earrings',
-//         description: "The Nike men's cloths collection have lot of varieties where you can find your perfect cloths for running, exercise, yoga, sportswear etc",
-//         gender: 'men',
-//         img: [
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f2d1862d-ebb5-49c4-b803-f2d7ad446604/jordan-jumpman-85-t-shirt-5f2vG1.png",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/4c5b556f-8ec6-4c04-9115-6faf42a032c0/jordan-air-jordan-t-shirt-7xvk6R.png",
-//             "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/20556d0e-47a1-4a49-9c2b-739881ed586f/jordan-air-jordan-t-shirt-7xvk6R.png",
-//         ]
-//     }
-// ];
-
-
-// app.get('/shoeData', (req, res) => {
-//     res.json(shoeData);
-// });
-
 
 
 
@@ -568,7 +497,7 @@ const allProducts = [
     },
     {
         _id:"6263884a789463d436443925",
-        title:"Nike Air Force 1 '07 SE",
+        title:"Chain Air Force",
         gender : "Men",
         description:"Boy's Chain and Pendants",
         category : "Chain",
@@ -586,7 +515,7 @@ const allProducts = [
     },
     {
         _id:"6263884a789463d436443926",
-        title:"Nike Air Force 1 '07 SE",
+        title:"Chain 1 '07 SE",
         gender : "Men",
         description:"Boy's Chain and Pendants",
         category : "Chain",
@@ -996,7 +925,7 @@ const BraceletData = [
 ]
 
 
-app.get('/men', (req, res) => {
+app.get('/bracelet', (req, res) => {
     res.json(BraceletData);
 });
 
@@ -1216,7 +1145,7 @@ const EaringData = [
     
 ]
 
-app.get('/women', (req, res) => {
+app.get('/earing', (req, res) => {
     res.json(EaringData);
 });
 
@@ -1227,7 +1156,7 @@ app.get('/women', (req, res) => {
 const ChainData = [
     {
         _id:"6263884a789463d436443925",
-        title:"Nike Air Force 1 '07 SE",
+        title:"Chain Air Force",
         gender : "Men",
         description:"Boy's Chain and Pendants",
         category : "Chain",
@@ -1245,7 +1174,7 @@ const ChainData = [
     },
     {
         _id:"6263884a789463d436443926",
-        title:"Nike Air Force 1 '07 SE",
+        title:"Chain 1 '07 SE",
         gender : "Men",
         description:"Boy's Chain and Pendants",
         category : "Chain",
@@ -1443,7 +1372,7 @@ const ChainData = [
     },
 ]
 
-app.get('/kids', (req, res) => {
+app.get('/chain', (req, res) => {
     res.json(ChainData);
 });
 

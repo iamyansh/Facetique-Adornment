@@ -25,7 +25,7 @@ export const Auth = () => {
                 <ModalOverlay />
                 <ModalContent>
                     <ModalHeader fontWeight={'700'} fontSize={'23px'} mt={'40px'} mx={'10%'} textAlign={'center'}>
-                        {isLogin ? "YOUR ACCOUNT FOR EVERYTHING NIKE" : isReset ? "RESET PASSWORD" : "BECOME A NIKE MEMBER"}
+                        {isLogin ? "YOUR ACCOUNT FOR EVERYTHING FACETIQUE" : isReset ? "RESET PASSWORD" : "BECOME A FACETIQUE MEMBER"}
                     </ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>

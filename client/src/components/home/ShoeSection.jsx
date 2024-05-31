@@ -3,7 +3,7 @@ import { BigGridBox, SmallGridBox } from "./GridBox";
 import { HomeDescText, HomeText } from "./HomeText";
 
 
-export const ShoeSection = ({ heading, description, img, gender, handleSection,category }) => {
+export const ShoeSection = ({ heading, description, img, handleSection,category }) => {
     return (
         <Box
             m={'60px auto 60px'}
@@ -14,7 +14,7 @@ export const ShoeSection = ({ heading, description, img, gender, handleSection,c
             <HomeDescText>{description}</HomeDescText>
 
             <Grid
-                onClick={() => { handleSection(gender, category) }}
+                onClick={() => { handleSection(category) }}
                 gap={['10px', '10px', '10px', '10px', '20px']}
                 templateColumns={'repeat(2, 1fr)'}
             >

@@ -6,7 +6,7 @@ import { sendOrderRequest } from "./sendOrderRequest";
 
 export const initPayment = (form, orderDetails, orderSummary, cartProducts, token, toast, dispatch, navigate) => {
 
-    const { firstname, lastName, mobile, email } = form;
+    const { firstName, lastName, mobile, email } = form;
 
     const options = {
         key: 'rzp_test_wnMFzw902REaNH',
@@ -18,7 +18,7 @@ export const initPayment = (form, orderDetails, orderSummary, cartProducts, toke
         description: 'Thanks for purchasing',
 
         prefill: {
-            name: `${firstname} ${lastName}`,
+            name: `${firstName} ${lastName}`,
             email: email,
             contact: mobile
         },

@@ -43,9 +43,9 @@ export const Navbar = () => {
                 <Box display={['none', 'none', 'flex', 'flex', 'flex']}>
                     <Category handlePath={handlePath} name={'/'} text={"Home"} link={'/'} />
                     <Category handlePath={handlePath} name={'allProducts'} text={"All Products"} link={'/allProducts'} />
-                    <Category handlePath={handlePath} name={'men'} text={"Bracelet"} link={'/bracelet'} />
-                    <Category handlePath={handlePath} name={'women'} text={"Earing"} link={'earing'} />
-                    <Category handlePath={handlePath} name={'kids'} text={"Chain & Pendant"} link={'/chain'} />
+                    <Category handlePath={handlePath} name={'bracelet'} text={"Bracelet"} link={'/bracelet'} />
+                    <Category handlePath={handlePath} name={'earing'} text={"Earing"} link={'earing'} />
+                    <Category handlePath={handlePath} name={'chain'} text={"Chain & Pendant"} link={'/chain'} />
                 </Box>
 
                 <Spacer />

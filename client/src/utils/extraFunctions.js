@@ -31,6 +31,10 @@ export const getGender = (gender) => {
     return !(gender === "men" || gender === "women" || gender === "kids");
 };
 
+export const getCategory = (category) => {
+    return (category === "allProducts");
+};
+
 
 export const shortString = (text, limit = 15) => {
     return text.slice(0, limit) + (text.length > limit ? "..." : "");
