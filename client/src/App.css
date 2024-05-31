@@ -39,3 +39,11 @@ body::-webkit-scrollbar-thumb {
 		width: 41ch;
 	}
 }
+
+.greenButton:hover{
+	background-color: #0B6623 !important;
+}
+
+.redButton:hover{
+	background-color: #900603 !important;
+}
