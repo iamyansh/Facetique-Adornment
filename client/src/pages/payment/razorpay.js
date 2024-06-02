@@ -14,7 +14,7 @@ export const initPayment = (form, orderDetails, orderSummary, cartProducts, toke
         amount: orderDetails.amount,
         currency: orderDetails.currency,
         image: nikeLogoPayment,
-        name: 'FTQ Clone',
+        name: 'FTQ',
         description: 'Thanks for purchasing',
 
         prefill: {
