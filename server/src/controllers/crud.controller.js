@@ -29,7 +29,7 @@ const postFavourite = (model) => async (req,res) => {
 const getAll = (model) => async (req,res) => {
     
     try {
-        const item = model.find().lean();
+        const item = await model.find().lean();
 
         return res.status(201).send(item);
 
