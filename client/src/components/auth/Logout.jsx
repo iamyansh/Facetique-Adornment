@@ -3,7 +3,7 @@ import { BsCart2, BsFillCaretDownFill } from "react-icons/bs";
 import { RiLuggageCartLine } from "react-icons/ri";
 import { FaRegHeart } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi"
-import { Coupon } from "../../pages/coupon/coupon";
+import { Coupon } from "../../pages/coupon/Coupon";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logoutFromAccount, removeToken } from "../../redux/features/auth/actions";
