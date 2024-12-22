@@ -41,7 +41,7 @@ export const Navbar = () => {
             <Box display={['none','none','flex','flex','flex','flex']}>
                 <Category handlePath={handlePath} name={'/'} link={'/'} text="Home"></Category>
                 <Category handlePath={handlePath} name={'allProducts'} link={'/allProducts'} text="All Products"></Category>
-                <Category handlePath={handlePath} name={'bracelet'} link={'/bracelet'} text="Bracelets"></Category>
+                <Category handlePath={handlePath} name={'bracelet'} link={'/bracelet'} text="Bracelet"></Category>
                 <Category handlePath={handlePath} name={'earing'} link={'/earing'} text="Earing"></Category>
                 <Category handlePath={handlePath} name={'chain'} link={'/chain'} text="Chain"></Category>
             </Box>

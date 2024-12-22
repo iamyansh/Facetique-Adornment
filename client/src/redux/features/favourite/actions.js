@@ -23,7 +23,7 @@ export const getFavouriteError = () => {
 export const addToFavouriteRequest = (data, token, toast) => async () => {
     try {
         delete data._id;
-        await axios.post('http://localhost:8081/favourite', data, { headers: { 'Authorization': `Bearer ${token}` } });
+        await axios.post('/favourite', data, { headers: { 'Authorization': `Bearer ${token}` } });
         setToast(toast, 'Item added to the favourites', 'success');
     } catch (err) {
         console.log(err.response.data);
@@ -38,7 +38,7 @@ export const addToFavouriteRequest = (data, token, toast) => async () => {
 export const getFavouriteRequest = (token) => async (dispatch) => {
     try {
         dispatch(getFavouriteLoading());
-        let res = await axios.get('http://localhost:8081/favourite', { headers: { 'Authorization': `Bearer ${token}` } });
+        let res = await axios.get('/favourite', { headers: { 'Authorization': `Bearer ${token}` } });
         dispatch(getFavouriteSuccess(res.data));
     } catch (err) {
         console.log(err);
@@ -49,7 +49,7 @@ export const getFavouriteRequest = (token) => async (dispatch) => {
 export const deleteFavouriteRequest = (id, token, toast) => async (dispatch) => {
     try {
         dispatch(getFavouriteLoading());
-        await axios.delete(`http://localhost:8081/favourite/${id}`);
+        await axios.delete(`/favourite/${id}`);
         dispatch(getFavouriteRequest(token));
         setToast(toast, 'Product removed from favourites', 'success');
     } catch (err) {

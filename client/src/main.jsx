@@ -10,7 +10,7 @@ import { theme } from './theme.js'
 import axios from 'axios'
 
 // axios.defaults.baseURL = "";
-axios.defaults.baseURL = "http://localhost:5001";
+axios.defaults.baseURL = "http://localhost:8081";
 
 
 createRoot(document.getElementById('root')).render(

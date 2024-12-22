@@ -12,7 +12,7 @@ export const removeToken = () => ({type: REMOVE_TOKEN});
 export const getSignUpSuccess = (data, toast, navigate) => async (dispatch) => {
 
     try {
-        let res = await axios.post(`http://localhost:8081/signup`, data);
+        let res = await axios.post(`/signup`, data);
         res = res.data;
         dispatch(getToken(res));
         setItem('token', res.token);
@@ -29,7 +29,7 @@ export const getSignUpSuccess = (data, toast, navigate) => async (dispatch) => {
 export const getLoginSuccess = (data, toast, navigate) => async (dispatch) => {
     
     try {
-        let res = await axios.post(`http://localhost:8081/login`, data);
+        let res = await axios.post(`/login`, data);
         res = res.data;
         dispatch(getToken(res));
         setItem('token', res.token);

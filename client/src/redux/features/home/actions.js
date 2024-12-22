@@ -10,9 +10,6 @@ export const getUpperData = () => async (dispatch) => {
     
     try{
         dispatch(getDataLoadingHome());
-        // const res = await fetch('http://localhost:5001/homeUpperData');
-        // const data = await res.json();
-
         const res = await axios.get('/homeUpperData');
         dispatch(getDataSuccessUpper(res.data));
     }catch(err){

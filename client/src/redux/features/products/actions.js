@@ -30,9 +30,6 @@ export const getRequest = (path) => async (dispatch) => {
     try{
         dispatch(getDataLoading());
         const {data} = await axios.get(path);
-        // const res = await fetch(`http://localhost:5001/${path}`);
-        // const data = await res.json();
-
         dispatch(getDataSuccess(data));
     }
     catch(err){
