@@ -1,4 +1,4 @@
-import { getItem } from "../../../utils/localstorage";
+import { getItem } from "../../../utils/localStorage";
 import { ADD_TO_CART_SUCCESS, APPLY_COUPON_SUCCESS, REMOVE_COUPON_SUCCESS, REMOVE_FROM_CART, UPDATE_CART_DETAILS } from "./actionTypes";
 
 
