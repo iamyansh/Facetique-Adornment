@@ -1,7 +1,7 @@
 import { setToast } from "../../../utils/extraFunctions";
 import { getCartTotal } from "../../../utils/getCartTotal";
 import { handleCartDuplicate } from "../../../utils/handleCartDuplicate";
-import { getItem, setItem } from "../../../utils/localstorage";
+import { getItem, setItem } from "../../../utils/localStorage";
 import { getItemSession, removeItemSession, setItemSession } from "../../../utils/sessionStorage";
 import { ADD_TO_CART_SUCCESS, APPLY_COUPON_SUCCESS, REMOVE_COUPON_SUCCESS, REMOVE_FROM_CART, UPDATE_CART_DETAILS } from "./actionTypes";
 
