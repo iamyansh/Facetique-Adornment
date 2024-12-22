@@ -8,6 +8,11 @@ require('dotenv').config();
 let order_id;
 
 //To create order id
+
+router.get('/get-razorpay-key', async (req,res) => {
+    return res.send({key: process.env.RAZORPAY_KEY_ID});
+})
+
 router.post('/order', async (req, res) => {
     try {
 

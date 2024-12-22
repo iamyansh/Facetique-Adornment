@@ -4,12 +4,13 @@ import { setToast } from "../../utils/extraFunctions";
 import { sendOrderRequest } from "./sendOrderRequest";
 
 
-export const initPayment = (form, orderDetails, orderSummary, cartProducts, token, toast, dispatch, navigate) => {
+export const initPayment = async (form, orderDetails, orderSummary, cartProducts, token, toast, dispatch, navigate) => {
 
     const { firstName, lastName, mobile, email } = form;
+    const { data } = await axios.get('/api/payment/get-razorpay-key');
 
     const options = {
-        key: 'rzp_test_wnMFzw902REaNH',
+        key: data.key,
         order_id: orderDetails.id,
         amount: orderDetails.amount,
         currency: orderDetails.currency,
@@ -25,7 +26,7 @@ export const initPayment = (form, orderDetails, orderSummary, cartProducts, toke
 
         handler: async function (response) {
             try {
-                const { data } = await axios.post('http://localhost:8081/api/payment/verify', response);
+                const { data } = await axios.post('/api/payment/verify', response);
                 
                 setToast(toast, data.message, 'success');
 
