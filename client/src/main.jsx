@@ -10,7 +10,8 @@ import { theme } from './theme.js'
 import axios from 'axios'
 
 // axios.defaults.baseURL = "";
-axios.defaults.baseURL = "http://localhost:8081";
+console.log(import.meta.env.VITE_BACKEND_URL);
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
 
 
 createRoot(document.getElementById('root')).render(
