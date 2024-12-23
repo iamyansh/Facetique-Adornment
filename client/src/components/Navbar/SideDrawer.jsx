@@ -1,10 +1,12 @@
 import { Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Icon, useDisclosure, VStack } from "@chakra-ui/react"
 import { BiMenu } from "react-icons/bi"
 import { DrawerCategory } from "./CategoryAndIcon";
+import { useSelector } from "react-redux";
 
 export const SideDrawer = ({handlePath}) => {
 
     const {isOpen, onOpen, onClose} = useDisclosure();
+    const user = useSelector((state) => state.authReducer.user.firstName);
 
     return <>
         <Icon w={'28px'} h={'28px'} as={BiMenu} mr={'10px'} onClick={onOpen}/>
@@ -16,7 +18,7 @@ export const SideDrawer = ({handlePath}) => {
             <DrawerOverlay/>
             <DrawerContent>
                 <DrawerCloseButton/>
-                <DrawerHeader>Hi user</DrawerHeader>
+                <DrawerHeader>Hi {user}</DrawerHeader>
                 <Divider/>
                 <DrawerBody>
                     <VStack gap={'30px'} mt={'40px'}>
