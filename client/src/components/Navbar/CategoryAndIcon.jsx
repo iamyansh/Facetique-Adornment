@@ -22,10 +22,14 @@ export const Category = ({name, text, link, handlePath}) => {
 }
 
 
-export const DrawerCategory = ({text}) => {
+export const DrawerCategory = ({text, name, link, handlePath}) => {
     return <>
         <Text fontSize={'20px'} fontWeight={'500'}>
-            <Link>
+            <Link 
+                onClick={handlePath}
+                to={link}
+                name={name}
+            >
                 {text}
             </Link>
         </Text>

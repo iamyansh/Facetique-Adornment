@@ -2,7 +2,7 @@ import { Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHe
 import { BiMenu } from "react-icons/bi"
 import { DrawerCategory } from "./CategoryAndIcon";
 
-export const SideDrawer = () => {
+export const SideDrawer = ({handlePath}) => {
 
     const {isOpen, onOpen, onClose} = useDisclosure();
 
@@ -20,11 +20,11 @@ export const SideDrawer = () => {
                 <Divider/>
                 <DrawerBody>
                     <VStack gap={'30px'} mt={'40px'}>
-                        <DrawerCategory text={"Home"}></DrawerCategory>
-                        <DrawerCategory text={"All products"}></DrawerCategory>
-                        <DrawerCategory text={"Bracelet"}></DrawerCategory>
-                        <DrawerCategory text={"Earing"}></DrawerCategory>
-                        <DrawerCategory text={"Chain"}></DrawerCategory>
+                        <DrawerCategory handlePath={handlePath} name={'/'} link={'/'} text={"Home"}></DrawerCategory>
+                        <DrawerCategory handlePath={handlePath} name={'allProducts'} link={'/allProducts'} text={"All products"}></DrawerCategory>
+                        <DrawerCategory handlePath={handlePath} name={'bracelet'} link={'/bracelet'} text={"Bracelet"}></DrawerCategory>
+                        <DrawerCategory handlePath={handlePath} name={'earing'} link={'/earing'} text={"Earing"}></DrawerCategory>
+                        <DrawerCategory handlePath={handlePath} name={'chain'} link={'/chain'} text={"Chain"}></DrawerCategory>
                     </VStack>
                 </DrawerBody>
             </DrawerContent>

@@ -18,7 +18,7 @@ export const sendOrderRequest = async (shippingDetails, orderId, response, order
     };
 
     try {
-        await axios.post('http://localhost:8081/order', payload, { headers: { 'Authorization': `Bearer ${token}` } });
+        await axios.post('/order', payload, { headers: { 'Authorization': `Bearer ${token}` } });
 
         setToast(toast, 'Order placed successfully', 'success');
 

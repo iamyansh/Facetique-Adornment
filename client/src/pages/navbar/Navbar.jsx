@@ -62,7 +62,7 @@ export const Navbar = () => {
 
             <Box display={['flex','flex','none','none','none','none']}>
                 <Center mr={'10px'}>
-                    <SideDrawer/>
+                    <SideDrawer handlePath={handlePath}/>
                 </Center>
             </Box>
 
